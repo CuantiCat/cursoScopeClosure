@@ -1,0 +1,17 @@
+function createPetList() {
+    // Tu código aquí 👈
+    let list = [];
+    function addPet(newPet) {
+      if (newPet) {
+        list.push(newPet);
+        return `Added: ${newPet} to pet list`;
+      } else {
+        return list;
+      }
+    }
+    return addPet;
+}
+const petList = createPetList();
+console.log(petList("burro"));
+console.log(petList("tamal"));
+console.log(petList());
